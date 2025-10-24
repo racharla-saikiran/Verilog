@@ -6,6 +6,7 @@ module mux(input a,b,c,d,input [1:0]sel,output reg y);
     1 :  y=b;
     2 :  y=c; 
     3 :  y=d;
+        default : y=a;
     endcase
     end
 endmodule 
